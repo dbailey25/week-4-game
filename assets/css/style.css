@@ -1,0 +1,9 @@
+/*font-family: 'Bungee Hairline', cursive;
+font-family: 'Bungee', cursive;*/
+
+#win-loss {
+  height: 30px;
+  width: 400px;
+  background-color: #3786ff;
+  border-radius: 15px;
+}
