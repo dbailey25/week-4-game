@@ -1,7 +1,70 @@
 /*font-family: 'Bungee Hairline', cursive;
 font-family: 'Bungee', cursive;*/
 body {
-  background-image: url("../images/planet.jpg");
+  background-image: url("../images/planet2_sm.png");
+}
+
+#ship-container {
+  height: 110px;
+  width: 75px;
+  position: relative;
+  top: 160px;
+  left: 30px;
+}
+
+#ship {
+  height: 73px;
+  width: 68px;
+}
+
+#rocket {
+  height: 70px;
+  width: 63px;
+}
+
+#flame {
+  height: 30px;
+  width: 25px;
+  position: relative;
+  left: 20px;
+  top: -5px;
+  visibility: hidden;
+}
+
+#explosion {
+  height: 80px;
+}
+
+#controls {
+  position: fixed;
+  bottom: 36px;
+
+}
+
+#scanner {
+  height: 155px;
+  width: 290px;
+  background-image: url(../images/scanner.jpg);
+  border: 5px solid #4f4f4f;
+  display: inline-block;
+  float: left;
+}
+
+#empty {
+  background-color: #4f4f4f;
+  height: 49px;
+  width: 65px;
+  border: 5px solid #4f4f4f;
+  float: left;
+}
+
+.fuel {
+  background-image: url(../images/fuel.jpg);
+  background-color: #4f4f4f;
+  height: 43px;
+  width: 65px;
+  border: 5px solid #4f4f4f;
+  float: left;
 }
 
 #bottom-bar {
@@ -14,7 +77,8 @@ body {
 
 #win-loss {
   height: 30px;
-  width: 400px;
+  width: 98vw;
+  max-width: 400px;
   background-color: #3786ff;
   border-radius: 15px;
   position: relative;
