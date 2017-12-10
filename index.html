@@ -6,8 +6,6 @@
   <!-- links to external files -->
   <!-- css-reset -->
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <!-- css-bootstrap -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
   <!-- css-custom -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <!-- fonts -->
@@ -30,10 +28,23 @@
 </div>
 
 <div id="controls">
-  <div id="scanner"></div>
-  <div id="empty"></div>
-  <div id="target" class="fuel"></div>
-  <div id="level" class="fuel"></div>
+  <div id="scan-container">
+    <img id="scanner" src="assets/images/scanner.jpg">
+  </div>
+
+  <div class="fuel-container">
+    <div id="empty" class="gauge">
+    </div>
+    <div class="gauge">
+      <div id="target" class="fuel">
+        <img src="assets/images/fuel.jpg">
+      </div>
+    </div>
+    <div class="gauge">
+      <div id="level" class="fuel">
+        <img src="assets/images/fuel.jpg">
+      </div>
+    </div>
 </div>
 <!-- wins-losses -->
 <div id="bottom-bar">

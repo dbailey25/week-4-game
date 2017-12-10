@@ -38,33 +38,38 @@ body {
 #controls {
   position: fixed;
   bottom: 36px;
-
+  width: 100vw;
+  background-color: #4f4f4f;
 }
 
-#scanner {
-  height: 155px;
-  width: 290px;
-  background-image: url(../images/scanner.jpg);
+#scan-container {
+  height: 156px;
+  width: 73vw;
   border: 5px solid #4f4f4f;
   display: inline-block;
   float: left;
 }
 
-#empty {
+#scanner {
+  height: 100%;
+  width: 100%;
+  }
+
+.fuel-container {
   background-color: #4f4f4f;
-  height: 49px;
-  width: 65px;
+  width: 20vw;
   border: 5px solid #4f4f4f;
   float: left;
 }
 
+.gauge {
+height: 42px;
+border: 5px solid #4f4f4f;
+}
+
 .fuel {
-  background-image: url(../images/fuel.jpg);
-  background-color: #4f4f4f;
-  height: 43px;
-  width: 65px;
-  border: 5px solid #4f4f4f;
-  float: left;
+  height: 100%;
+  width: 100%;
 }
 
 #bottom-bar {
