@@ -1,5 +1,5 @@
-/*font-family: 'Bungee Hairline', cursive;
-font-family: 'Bungee', cursive;*/
+/*font-family: 'Bungee Hairline', Arial, cursive;
+font-family: 'Jomhuria', Arial, cursive;*/
 body {
   background-image: url("../images/planet2_sm.png");
 }
@@ -8,7 +8,7 @@ body {
   height: 110px;
   width: 75px;
   position: relative;
-  top: 160px;
+  top: 142px;
   left: 30px;
 }
 
@@ -35,6 +35,30 @@ body {
   height: 80px;
 }
 
+.commDiv {
+  position: fixed;
+  bottom: 202px;
+  height: 165px;
+  width: 100vw;
+}
+
+#comm-panel {
+  height: 100%;
+  width: 100%;
+}
+
+#instructions {
+  height: 100px;
+  width: 85%;
+  font-family: 'Bungee Hairline', Arial, cursive;
+  font-size: 16px;
+  color: #1add27;
+  font-weight: bold;
+  position: absolute;
+  bottom: 50px;
+  left: 25px;
+}
+
 #controls {
   position: fixed;
   bottom: 36px;
@@ -44,7 +68,7 @@ body {
 
 #scan-container {
   height: 156px;
-  width: 73vw;
+  width: 77vw;
   border: 5px solid #4f4f4f;
   display: inline-block;
   float: left;
@@ -57,19 +81,46 @@ body {
 
 .fuel-container {
   background-color: #4f4f4f;
-  width: 20vw;
+  /*width: 20vw;*/
   border: 5px solid #4f4f4f;
   float: left;
 }
 
-.gauge {
-height: 42px;
-border: 5px solid #4f4f4f;
+#empty {
+  font-family: 'Jomhuria', Arial, cursive;
+  font-size: 24px;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 4px;
 }
 
-.fuel {
+.gauge {
+  height: 45px;
+  border: 5px solid #4f4f4f;
+}
+
+.fuelDiv {
   height: 100%;
-  width: 100%;
+  /*width: 100%;*/
+  width: 17vw;
+  display: inline-block;
+  padding-left: 3px;
+}
+
+.fuelStatus {
+  font-family: 'Jomhuria', Arial, cursive;
+  font-size: 20px;
+  color: #cca716;
+  text-align: center;
+  position: relative;
+  bottom: 45px;
+}
+
+p {
+  font-family: 'Jomhuria', Arial, cursive;
+  font-size: 30px;
+  margin-top: -5px;
+  color: #cc4015;
 }
 
 #bottom-bar {
@@ -118,7 +169,7 @@ border: 5px solid #4f4f4f;
 }
 
 .text {
-  font-family: 'Bungee Hairline', cursive;
+  font-family: 'Bungee Hairline', Arial, cursive;
   font-size: 20px;
   color: white;
   font-weight: bold;

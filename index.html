@@ -9,7 +9,7 @@
   <!-- css-custom -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <!-- fonts -->
-<link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Jomhuria" rel="stylesheet">
 <title>Zandor IV</title>
 </head>
 
@@ -27,25 +27,45 @@
   </div> -->
 </div>
 
+<div class="commDiv">
+  <img id="comm-panel" src="assets/images/comm-panel.jpg">
+  <div id="instructions">
+    The ship needs an exact amount of fuel to complete its mission. Too much and it may explode. Each of the crystals provides a different amount of fuel. Click them to fill its tank to the Target Fuel Level.
+  </div>
+</div>
+
 <div id="controls">
   <div id="scan-container">
     <img id="scanner" src="assets/images/scanner.jpg">
+    <div class="">
+      <img src="assets/images/blue-crystal.jpg" class="crystal" id="blue">
+      <img src="assets/images/green-crystal.jpg" class="crystal" id="green">
+      <img src="assets/images/pink-crystal.jpg" class="crystal" id="pink">
+      <img src="assets/images/yellow-crystal.jpg" class="crystal" id="yellow">
+    </div>
   </div>
 
-  <div class="fuel-container">
+  <!-- <div class="fuel-container"> -->
     <div id="empty" class="gauge">
+      FUEL INDICATORS
     </div>
     <div class="gauge">
-      <div id="target" class="fuel">
+      <div class="fuelDiv">
         <img src="assets/images/fuel.jpg">
+        <div class="fuelStatus">
+          CURRENT <p id="current">0</p>
+        </div>
       </div>
     </div>
     <div class="gauge">
-      <div id="level" class="fuel">
+      <div class="fuelDiv">
         <img src="assets/images/fuel.jpg">
+        <div class="fuelStatus">
+          TARGET <p id="target">0</p>
+        </div>
       </div>
     </div>
-</div>
+<!-- </div> -->
 <!-- wins-losses -->
 <div id="bottom-bar">
   <div id="win-loss">
