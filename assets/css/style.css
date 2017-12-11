@@ -8,7 +8,7 @@ body {
   height: 110px;
   width: 75px;
   position: relative;
-  top: 100px;
+  top: 130px;
   left: 30px;
 }
 
@@ -38,7 +38,7 @@ body {
 .commDiv {
   position: fixed;
   bottom: 158px;
-  height: 165px;
+  height: 170px;
   width: 100vw;
 }
 
@@ -48,14 +48,15 @@ body {
 }
 
 #instructions {
-  height: 100px;
-  width: 85%;
+  height: 110px;
+  width: 87%;
   font-family: 'Bungee Hairline', Arial, cursive;
   font-size: 16px;
   color: #1add27;
   font-weight: bold;
+  word-spacing: 4px;
   position: absolute;
-  bottom: 50px;
+  bottom: 42px;
   left: 25px;
 }
 
@@ -92,7 +93,6 @@ body {
   text-align: center;
   height: 25px;
   border: 5px solid #4f4f4f;
-  /*padding-top: 4px;*/
 }
 
 .gauge {
@@ -110,6 +110,7 @@ body {
 
 .fuelImg {
   border-radius: 6px;
+  width: 17vw;
 }
 
 .fuelStatus {
@@ -118,7 +119,7 @@ body {
   color: #cca716;
   text-align: center;
   position: relative;
-  bottom: 45px;
+  bottom: 40px;
 }
 
 p {
@@ -132,13 +133,13 @@ p {
   width: 63vw;
   position: relative;
   bottom: 62px;
-  left: 48px;
+  left: 13vw;
 }
 
 .crystal {
-  margin-left: 3px;
+  margin-left: 1.5vw;
   display: inline-block;
-  width: 14vw;
+  width: 13vw;
   border-radius: 4px;
 }
 
@@ -190,4 +191,68 @@ p {
   font-size: 18px;
   color: white;
   font-weight: bold;
+}
+
+@media screen and (max-height:625px) { /* xs screen size */
+  #instructions {
+    height: 110px;
+    width: 87%;
+    font-family: 'Bungee Hairline', Arial, cursive;
+    font-size: 16px;
+    color: #1add27;
+    font-weight: bold;
+    word-spacing: 4px;
+    position: absolute;
+    bottom: 53px;
+    left: 25px;
+  }
+
+
+  #empty {
+    font-family: 'Jomhuria', Arial, cursive;
+    font-size: 20px;
+    line-height: 16px;
+    text-align: center;
+    height: 26px;
+    border: 5px solid #4f4f4f;
+  }
+
+  .fuelStatus {
+    font-family: 'Jomhuria', Arial, cursive;
+    font-size: 18px;
+    color: #cca716;
+    text-align: center;
+    position: relative;
+    bottom: 36px;
+  }
+}
+
+@media screen and (min-width:625px) {   /* md screen size */
+  body {
+    background-image: url("../images/planet2_md2.png");
+  }
+
+  #ship-container {
+    height: 110px;
+    width: 75px;
+    position: relative;
+    top: 370px;
+    left: 55px;
+  }
+
+  /*#controls {
+    position: fixed;
+    bottom: 23px;
+    width: 100vw;
+    background-color: #4f4f4f;
+  }*/
+
+  #scan-container {
+    height: 255px;
+    width: 77vw;
+    border: 5px solid #4f4f4f;
+    display: inline-block;
+    float: left;
+  }
+
 }
