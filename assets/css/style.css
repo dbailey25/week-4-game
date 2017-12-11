@@ -77,11 +77,10 @@ body {
 #scanner {
   height: 100%;
   width: 100%;
+  border-radius: 6px;
   }
 
 .fuel-container {
-  background-color: #4f4f4f;
-  /*width: 20vw;*/
   border: 5px solid #4f4f4f;
   float: left;
 }
@@ -107,6 +106,10 @@ body {
   padding-left: 3px;
 }
 
+.fuelImg {
+  border-radius: 6px;
+}
+
 .fuelStatus {
   font-family: 'Jomhuria', Arial, cursive;
   font-size: 20px;
@@ -121,6 +124,20 @@ p {
   font-size: 30px;
   margin-top: -5px;
   color: #cc4015;
+}
+
+#crystalContainer {
+  width: 63vw;
+  position: relative;
+  bottom: 62px;
+  left: 48px;
+}
+
+.crystal {
+  margin-left: 3px;
+  display: inline-block;
+  width: 14vw;
+  border-radius: 4px;
 }
 
 #bottom-bar {
