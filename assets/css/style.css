@@ -6,8 +6,8 @@ body {
   height: 110px;
   width: 75px;
   position: relative;
-  top: 130px;
-  left: 30px;
+  top: 220px;
+  left: 25px;
 }
 
 #ship {
@@ -33,11 +33,22 @@ body {
   height: 80px;
 }
 
-.commDiv {
+#instructions {
+  font-family: 'Bungee Hairline', Arial, cursive;
+  font-size: 16px;
+  color: #1add27;
+  font-weight: bold;
+  word-spacing: 4px;
   position: fixed;
-  bottom: 158px;
-  height: 170px;
-  width: 100vw;
+  bottom: 165px;
+  left: 10px;
+  height: auto;
+  width: 87vw;
+  padding: 10px;
+  border: 4px solid #29511a;
+  border-radius: 10px;
+  background-color: #4c6d40;
+  opacity: .88;
 }
 
 #comm-panel {
@@ -45,7 +56,7 @@ body {
   width: 100%;
 }
 
-#instructions {
+/*#instructions {
   height: 110px;
   width: 87%;
   font-family: 'Bungee Hairline', Arial, cursive;
@@ -56,7 +67,7 @@ body {
   position: absolute;
   bottom: 42px;
   left: 25px;
-}
+}*/
 
 #controls {
   position: fixed;
@@ -64,6 +75,12 @@ body {
   width: 100vw;
   background-color: #4f4f4f;
 }
+
+/*#block {
+  visibility: hidden;
+}*/
+
+
 
 #scan-container {
   height: 125px;
@@ -190,7 +207,7 @@ p {
 }
 
 @media screen and (max-height:625px) { /* xs screen size */
-  #instructions {
+  /*#instructions {
     height: 110px;
     width: 87%;
     font-family: 'Bungee Hairline', Arial, cursive;
@@ -201,6 +218,24 @@ p {
     position: absolute;
     bottom: 53px;
     left: 25px;
+  }*/
+
+  #instructions {
+    font-family: 'Bungee Hairline', Arial, cursive;
+    font-size: 16px;
+    color: #1add27;
+    font-weight: bold;
+    word-spacing: 4px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    height: 125px;
+    width: 87vw;
+    padding: 10px;
+    border: 4px solid #29511a;
+    border-radius: 10px;
+    background-color: #4c6d40;
+    opacity: .88;
   }
 
   #empty {
@@ -231,33 +266,26 @@ p {
     height: 110px;
     width: 75px;
     position: relative;
-    top: 295px;
+    top: 320px;    /* ---------- */
     left: 55px;
   }
 
-  .commDiv {
-    position: fixed;
-    bottom: 306px;
-    height: 180px;
-    width: 100vw;
-  }
-
-  #comm-panel {
-    height: 100%;
-    width: 100%;
-  }
-
   #instructions {
-    height: 110px;
-    width: 87%;
     font-family: 'Bungee Hairline', Arial, cursive;
-    font-size: 24px;
+    font-size: 20px;    /* ---------- */
     color: #1add27;
     font-weight: bold;
     word-spacing: 4px;
-    position: absolute;
-    bottom: 53px;
-    left: 45px;
+    position: fixed;
+    top: 15px;    /* ---------- */
+    left: 75px;    /* ---------- */
+    height: 120px;
+    width: 80vw;    /* ---------- */
+    padding: 10px;
+    border: 4px solid #29511a;
+    border-radius: 10px;
+    background-color: #4c6d40;
+    opacity: .88;
   }
 
   #controls {
@@ -268,7 +296,7 @@ p {
   }
 
   #scan-container {
-    height: 255px;
+    height: 250px;
     width: 77vw;
     border: 5px solid #4f4f4f;
     display: inline-block;
@@ -392,35 +420,17 @@ p {
     left: 200px;
   }
 
-  .commDiv {
-    position: fixed;
-    top: 15px;     /*---------*/
-    right: 15px;    /*---------*/
-    height: 220px;   /*---------*/
-    width: 470px;   /*---------*/
-    border: 4px solid #29511a;
-    border-radius: 10px;
-    background-color: #4c6d40;
-    opacity: .7;
-  }
-
-  #comm-panel {
-    height: 100%;
-    width: 100%;
-  }
-
   #instructions {
     height: 110px;
-    width: 87%;
+    width: 70%;
     font-family: 'Bungee Hairline', Arial, cursive;
     font-size: 24px;
-    /*color: #2a9600;*/
     color: #1add27;
     font-weight: bold;
     word-spacing: 4px;
-    position: absolute;
-    bottom: 93px;
-    left: 25px;
+    position: fixed;
+    top: 15px;
+    left:230px;
   }
 
   #controls {
@@ -429,6 +439,17 @@ p {
     width: 100vw;
     background-color: #4f4f4f;
   }
+
+/*#block {
+  height: 125px;
+  width: 15vw;
+  border: 5px solid #4f4f4f;
+  display: inline-block;
+  float: right;
+  position: fixed;
+  bottom: 40px;
+  left: -50px;
+}*/
 
   #scan-container {
     height: 210px; /* ----------- */
