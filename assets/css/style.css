@@ -52,8 +52,15 @@ body {
 }
 
 #replay {
+  min-height: 5vh;
+  font-size: 3vh;
+  font-family: 'Bungee', Arial Black, cursive;
+  color: #2b2b2b;
+  border-radius: 5px;
   position: fixed;
-  top: 400px;
+  top: 280px;
+  left: 30vw;
+  visibility: hidden;
 }
 
 #comm-panel {

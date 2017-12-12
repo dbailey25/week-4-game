@@ -1,21 +1,17 @@
 // global variables
 var targetNumber;
-assignTarget()
-
-
-$("#target").text(targetNumber);
-
 var counter = 0;
-
-// array for crystal values
+var wins = 0;
+var losses = 0;
 var crystalValues = []
 var crystals = ["blue", "green", "pink", "yellow"]
 
-
+assignTarget()
 assignCrystalValues()
 
 function assignTarget() {
   targetNumber = Math.floor(Math.random() * 120 + 19);
+  $("#target").text(targetNumber);
 }
 
 function assignCrystalValues() {
@@ -49,30 +45,32 @@ function assignCrystalValues() {
     $("#current").text(counter);
 
     if (counter === targetNumber) {
+      wins++;
+      $("#win-count").text(wins);
       $("#instructions").text("Great job! Refueling mission complete.");
-      // add button to reset
-      $("#instructions").append("<br>" + "<button>" + "Play Again" + "</button>");
-      $(":button").attr("id", "replay");
+      // show replay button
+      $("#replay").css("visibility", "visible");
 
       // !!!!!!!!!!!!!!!! ADD SHIP ANIMATION !!!!!!!!!!!!!!!
 
     }
 
     else if (counter >= targetNumber) {
+      losses++;
+      $("#loss-count").text(losses);
       $("#instructions").text("Target fuel level exceeded! Refueling mission failed.");
-      // add button to reset
-      $("#button").html("<button>" + "Play Again" + "</button>");
-      $(":button").attr("id", "replay");
+      //  show replay button
+      $("#replay").css("visibility", "visible");
     }
 
   });
 
   $("#replay").on("click", function() {
-    console.log($("#replay").get());
-    console.log("button clicked");
-    // crystalValues.length = 0;
-    // $("#current").text("0");
-    // $("#instructions").text("The ship needs the exact amount of fuel for its mission. Too much and it may explode. Each of the crystals provides a different amount of fuel. Click them to fill its tank to the Target Fuel Level.");
-    // assignTarget();
-    // assignCrystalValues();
+    crystalValues.length = 0;
+    counter = 0;
+    $("#current").text("0");
+    $("#instructions").text("The ship needs the exact amount of fuel for its mission. Too much and it may explode. Each of the crystals provides a different amount of fuel. Click them to fill its tank to the Target Fuel Level.");
+    assignTarget();
+    assignCrystalValues();
+    $("#replay").css("visibility", "hidden");
   });
