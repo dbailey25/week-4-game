@@ -51,6 +51,11 @@ body {
   opacity: .88;
 }
 
+#replay {
+  position: fixed;
+  top: 400px;
+}
+
 #comm-panel {
   height: 100%;
   width: 100%;
