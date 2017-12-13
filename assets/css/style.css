@@ -2,12 +2,19 @@ body {
   background-image: url("../images/planet2_sm2.png");
 }
 
-#ship-container {
+#launch-pad {
   height: 110px;
   width: 75px;
   position: relative;
   top: 220px;
   left: 25px;
+}
+
+#ship-container {
+  height: 110px;
+  width: 75px;
+  position: relative;
+  bottom: 0px;
 }
 
 #ship {
@@ -24,12 +31,12 @@ body {
 width: 25px;*/
 
 #flame {
-  height: 0px;
-  width: 5px;
+  height: 30px;
+  width: 25px;
   position: relative;
   left: 20px;
   top: -5px;
-  /*visibility: hidden;*/
+  visibility: hidden;
 }
 
 #explosion {
