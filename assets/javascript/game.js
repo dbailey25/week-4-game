@@ -57,7 +57,7 @@ function assignCrystalValues() {
        $(".crystal").off("click", handler);
        $("#flame").css("visibility", "visible");
        var ship = $("#ship-container");
-       ship.animate({top: "-330px"}, 2000);
+       ship.animate({top: "-450px"}, 2500);
        $("#instructions").css({"color":"#1add27","border":"4px solid #29511a","background-color":"#4c6d40"});
        $("#instructions").text("Great job! Refueling mission complete.");
        $("#replay").css("visibility", "visible");

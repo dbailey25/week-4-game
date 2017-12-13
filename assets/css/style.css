@@ -225,9 +225,9 @@ p {
     /*background-color: #d5d7e0;*/
     /*font-weight: 400;*/
     /*position: fixed;*/
-    bottom: 470px;
+    top: 10px;
     /*left: 10px;*/
-    /*height: 125px;*/
+    height: 115px;
     width: 77vw;
     /*padding: 10px;*/
     /*border-radius: 15px;*/
