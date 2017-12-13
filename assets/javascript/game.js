@@ -21,6 +21,14 @@ function displayShip() {
   $("#exhaust").html($("<img>", {"id": "flame", "src": "assets/images/exhaust.png"}));
 }
 
+function displayExplosion() {
+  $("#launch-pad").html($("<div></div>", {"id": "ship-container"}));
+  $("#ship-container").html($("<img>", {"id": "explosion", "src": "assets/images/explosion2.png"}));
+
+  // $("#ship-container").html($("<div></div>", {"id": "explosion-container"}));
+  // $("#explosion-container").html($("<img>", {"id": "explosion", "src": "assets/images/explosion2.png"}));
+}
+
 function assignTarget() {
   targetNumber = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
   $("#target").text(targetNumber);
@@ -59,9 +67,14 @@ function assignCrystalValues() {
        losses++;
        $("#loss-count").text(losses);
        $(".crystal").off("click", handler);
+
+       $("#rocket").css("visibility", "hidden");
+       displayExplosion();
+       var explosion = $("#explosion");
+       explosion.animate({width: "+=100px", height: "+=100px" }, 1000);
+       explosion.animate({height: "1px", width: "1px"}, 1500);
        $("#instructions").css({"color":"#a82100","border":"4px solid #a82100","background-color":"#ef9c88"});
        $("#instructions").text("Target fuel level exceeded! Refueling mission failed.");
-       //  show replay button
        $("#replay").css("visibility", "visible");
 
 

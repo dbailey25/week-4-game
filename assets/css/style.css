@@ -3,16 +3,16 @@ body {
 }
 
 #launch-pad {
-  height: 110px;
-  width: 75px;
+  /*height: 110px;
+  width: 75px;*/
   position: relative;
   top: 220px;
   left: 25px;
 }
 
 #ship-container {
-  height: 110px;
-  width: 75px;
+  /*height: 110px;
+  width: 75px;*/
   position: relative;
   bottom: 0px;
 }
@@ -25,10 +25,16 @@ body {
 #rocket {
   height: 70px;
   width: 63px;
+  visibility: visible;
 }
 
-/*height: 30px;
-width: 25px;*/
+
+#explosion {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  bottom: -73px;
+}
 
 #flame {
   height: 30px;
@@ -37,10 +43,6 @@ width: 25px;*/
   left: 20px;
   top: -5px;
   visibility: hidden;
-}
-
-#explosion {
-  height: 80px;
 }
 
 #instructions {
@@ -211,18 +213,22 @@ p {
 
 @media screen and (max-height:625px) { /* xs screen size */
 
+
+
+
+
   #instructions {
     /*font-family: 'VT323', Arial, monospace;*/
-    /*font-size: 20px;*/
+    font-size: 18px;
     /*color: #000f66;*/
     /*border: 4px solid #000f66;*/
     /*background-color: #d5d7e0;*/
     /*font-weight: 400;*/
     /*position: fixed;*/
-    top: 10px;
+    bottom: 470px;
     /*left: 10px;*/
-    height: 125px;
-    /*width: 87vw;*/
+    /*height: 125px;*/
+    width: 77vw;
     /*padding: 10px;*/
     /*border-radius: 15px;*/
     /*opacity: .7;*/
@@ -252,13 +258,35 @@ p {
     background-image: url("../images/planet2_md2.png");
   }
 
-  #ship-container {
-    height: 110px;
+  #launch-pad {
+    /*height: 110px;
     width: 75px;
-    position: relative;
-    top: 320px;    /* ---------- */
+    position: relative;*/
+    top: 320px;
     left: 55px;
   }
+
+  /*#ship-container {
+    height: 110px;
+    width: 75px;
+    position: relative;*/
+    /*bottom: 0px; */
+  /*}*/
+
+  /*font-family: 'VT323', Arial, monospace;
+  font-size: 20px;
+  color: #000f66;
+  border: 4px solid #000f66;
+  background-color: #d5d7e0;
+  font-weight: 400;
+  position: fixed;
+  bottom: 165px;
+  left: 10px;
+  height: auto;
+  width: 87vw;
+  padding: 10px;
+  border-radius: 15px;
+  opacity: .7;*/
 
   #instructions {
     /*font-family: 'VT323', Arial, monospace;*/
@@ -401,13 +429,21 @@ p {
     background-image: url("../images/planet2_lg2.png");
   }
 
-  #ship-container {
+  #launch-pad {
+    /*height: 110px;
+    width: 75px;
+    position: relative;*/
+    top: 345px;
+    left: 200px;
+  }
+
+  /*#ship-container {
     height: 110px;
     width: 75px;
     position: relative;
     top: 345px;
     left: 200px;
-  }
+  }*/
 
   #instructions {
     /*font-family: 'VT323', Arial, monospace;
