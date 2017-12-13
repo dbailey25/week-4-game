@@ -34,21 +34,21 @@ body {
 }
 
 #instructions {
-  font-family: 'Bungee Hairline', Arial, cursive;
-  font-size: 16px;
-  color: #1add27;
-  font-weight: bold;
-  word-spacing: 4px;
+  font-family: 'VT323', Arial, monospace;
+  font-size: 20px;
+  color: #000f66;
+  border: 4px solid #000f66;
+  background-color: #d5d7e0;
+  font-weight: 400;
+  /*word-spacing: 3px;*/
   position: fixed;
   bottom: 165px;
   left: 10px;
   height: auto;
   width: 87vw;
   padding: 10px;
-  border: 4px solid #29511a;
-  border-radius: 10px;
-  background-color: #4c6d40;
-  opacity: .88;
+  border-radius: 15px;
+  opacity: .7;
 }
 
 #replay {
@@ -68,31 +68,12 @@ body {
   width: 100%;
 }
 
-/*#instructions {
-  height: 110px;
-  width: 87%;
-  font-family: 'Bungee Hairline', Arial, cursive;
-  font-size: 16px;
-  color: #1add27;
-  font-weight: bold;
-  word-spacing: 4px;
-  position: absolute;
-  bottom: 42px;
-  left: 25px;
-}*/
-
 #controls {
   position: fixed;
   bottom: 23px;
   width: 100vw;
   background-color: #4f4f4f;
 }
-
-/*#block {
-  visibility: hidden;
-}*/
-
-
 
 #scan-container {
   height: 125px;
@@ -219,35 +200,22 @@ p {
 }
 
 @media screen and (max-height:625px) { /* xs screen size */
-  /*#instructions {
-    height: 110px;
-    width: 87%;
-    font-family: 'Bungee Hairline', Arial, cursive;
-    font-size: 16px;
-    color: #1add27;
-    font-weight: bold;
-    word-spacing: 4px;
-    position: absolute;
-    bottom: 53px;
-    left: 25px;
-  }*/
 
   #instructions {
-    font-family: 'Bungee Hairline', Arial, cursive;
-    font-size: 16px;
-    color: #1add27;
-    font-weight: bold;
-    word-spacing: 4px;
-    position: fixed;
+    /*font-family: 'VT323', Arial, monospace;*/
+    /*font-size: 20px;*/
+    /*color: #000f66;*/
+    /*border: 4px solid #000f66;*/
+    /*background-color: #d5d7e0;*/
+    /*font-weight: 400;*/
+    /*position: fixed;*/
     top: 10px;
-    left: 10px;
+    /*left: 10px;*/
     height: 125px;
-    width: 87vw;
-    padding: 10px;
-    border: 4px solid #29511a;
-    border-radius: 10px;
-    background-color: #4c6d40;
-    opacity: .88;
+    /*width: 87vw;*/
+    /*padding: 10px;*/
+    /*border-radius: 15px;*/
+    /*opacity: .7;*/
   }
 
   #empty {
@@ -283,21 +251,20 @@ p {
   }
 
   #instructions {
-    font-family: 'Bungee Hairline', Arial, cursive;
-    font-size: 20px;    /* ---------- */
-    color: #1add27;
-    font-weight: bold;
-    word-spacing: 4px;
-    position: fixed;
+    /*font-family: 'VT323', Arial, monospace;*/
+    font-size: 24px;    /* ---------- */
+    /*color: #000f66;*/
+    /*border: 4px solid #000f66;*/
+    /*background-color: #d5d7e0;*/
+    /*font-weight: 400;*/
+    /*position: fixed;*/
     top: 15px;    /* ---------- */
     left: 75px;    /* ---------- */
     height: 120px;
     width: 80vw;    /* ---------- */
-    padding: 10px;
-    border: 4px solid #29511a;
-    border-radius: 10px;
-    background-color: #4c6d40;
-    opacity: .88;
+    /*padding: 10px;*/
+    /*border-radius: 15px;*/
+    /*opacity: .7;*/
   }
 
   #controls {
@@ -433,16 +400,21 @@ p {
   }
 
   #instructions {
-    height: 110px;
+    /*font-family: 'VT323', Arial, monospace;
+    font-size: 28px;
+    color: #000f66;
+    border: 4px solid #000f66;
+    background-color: #d5d7e0;
+    font-weight: 400;*/
+
+    height: 100px;
     width: 70%;
-    font-family: 'Bungee Hairline', Arial, cursive;
-    font-size: 24px;
-    color: #1add27;
-    font-weight: bold;
-    word-spacing: 4px;
-    position: fixed;
+    /*position: fixed;*/
     top: 15px;
     left:230px;
+    /*padding: 10px;*/
+    /*border-radius: 15px;*/
+    /*opacity: .7;*/
   }
 
   #controls {
@@ -451,17 +423,6 @@ p {
     width: 100vw;
     background-color: #4f4f4f;
   }
-
-/*#block {
-  height: 125px;
-  width: 15vw;
-  border: 5px solid #4f4f4f;
-  display: inline-block;
-  float: right;
-  position: fixed;
-  bottom: 40px;
-  left: -50px;
-}*/
 
   #scan-container {
     height: 210px; /* ----------- */

@@ -35,6 +35,7 @@ function assignCrystalValues() {
        wins++;
        $("#win-count").text(wins);
        $(".crystal").off("click", handler);
+       $("#instructions").css({"color":"#1add27","border":"4px solid #29511a","background-color":"#4c6d40"});
        $("#instructions").text("Great job! Refueling mission complete.");
        // show replay button
        $("#replay").css("visibility", "visible");
@@ -46,6 +47,7 @@ function assignCrystalValues() {
        losses++;
        $("#loss-count").text(losses);
        $(".crystal").off("click", handler);
+       $("#instructions").css({"color":"a82100","border":"4px solid #a82100","background-color":"#ef9c88"});
        $("#instructions").text("Target fuel level exceeded! Refueling mission failed.");
        //  show replay button
        $("#replay").css("visibility", "visible");
@@ -92,6 +94,7 @@ $(".crystal").on("click", handler)
     $(".crystal").on("click", handler);
     counter = 0;
     $("#current").text("0");
+    $("#instructions").css({"color":"#000f66","border":"4px solid #000f66","background-color":"#d5d7e0"});
     $("#instructions").text("The ship needs the exact amount of fuel for its mission. Too much and it may explode. Each of the crystals provides a different amount of fuel. Click them to fill its tank to the Target Fuel Level.");
     assignTarget();
     assignCrystalValues();
