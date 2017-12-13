@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 // global variables
 var targetNumber;
 var counter = 0;
@@ -6,17 +8,18 @@ var losses = 0;
 var crystalValues = []
 var crystals = ["blue", "green", "pink", "yellow"]
 
+// functions to be called on page load
 assignTarget()
 assignCrystalValues()
 
 function assignTarget() {
-  targetNumber = Math.floor(Math.random() * 120 + 19);
+  targetNumber = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
   $("#target").text(targetNumber);
 }
 
 function assignCrystalValues() {
   for (var i = 0; i < crystals.length; i++) {
-    crystalValues [i] = Math.floor(Math.random() * 12 + 1);
+    crystalValues [i] = Math.floor(Math.random() * 12) + 1;
   }
   $("#blue").attr("value", crystalValues [0]);
   $("#green").attr("value", crystalValues [1]);
@@ -37,6 +40,8 @@ function assignCrystalValues() {
        $(".crystal").off("click", handler);
        $("#instructions").css({"color":"#1add27","border":"4px solid #29511a","background-color":"#4c6d40"});
        $("#instructions").text("Great job! Refueling mission complete.");
+       var flame = $("#flame");
+       flame.animate({height: "30px", width: "25px"});
        // show replay button
        $("#replay").css("visibility", "visible");
 
@@ -47,10 +52,12 @@ function assignCrystalValues() {
        losses++;
        $("#loss-count").text(losses);
        $(".crystal").off("click", handler);
-       $("#instructions").css({"color":"a82100","border":"4px solid #a82100","background-color":"#ef9c88"});
+       $("#instructions").css({"color":"#a82100","border":"4px solid #a82100","background-color":"#ef9c88"});
        $("#instructions").text("Target fuel level exceeded! Refueling mission failed.");
        //  show replay button
        $("#replay").css("visibility", "visible");
+
+       flame.animate({height: "30px", width: "25px"});
 
        // !!!!!!!!!!!!!!!! ADD SHIP ANIMATION !!!!!!!!!!!!!!!
      }
@@ -59,36 +66,6 @@ function assignCrystalValues() {
 
 $(".crystal").on("click", handler)
 
-
-  // original code
-  // $(".crystal").on("click", function() {
-  //   var crystalValue = ($(this).attr("value"));
-  //   crystalValue = parseInt(crystalValue);
-  //   counter += crystalValue;
-  //   $("#current").text(counter);
-  //   if (counter === targetNumber) {
-  //     wins++;
-  //     $("#win-count").text(wins);
-  //     $(".crystal").off("click");
-  //     $("#instructions").text("Great job! Refueling mission complete.");
-  //     // show replay button
-  //     $("#replay").css("visibility", "visible");
-  //
-  //     // !!!!!!!!!!!!!!!! ADD SHIP ANIMATION !!!!!!!!!!!!!!!
-  //   }
-  //
-  //   else if (counter >= targetNumber) {
-  //     losses++;
-  //     $("#loss-count").text(losses);
-  //     $(".crystal").off("click");
-  //     $("#instructions").text("Target fuel level exceeded! Refueling mission failed.");
-  //     //  show replay button
-  //     $("#replay").css("visibility", "visible");
-  //
-  //     // !!!!!!!!!!!!!!!! ADD SHIP ANIMATION !!!!!!!!!!!!!!!
-  //   }
-  //
-  // });
 
   $("#replay").on("click", function() {
     $(".crystal").on("click", handler);
@@ -100,3 +77,5 @@ $(".crystal").on("click", handler)
     assignCrystalValues();
     $("#replay").css("visibility", "hidden");
   });
+
+});
