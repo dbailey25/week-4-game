@@ -8,11 +8,12 @@ var losses = 0;
 var crystalValues = []
 var crystals = ["blue", "green", "pink", "yellow"]
 
-// functions to be called on page load
+// functions called on page load
 displayShip()
 assignTarget()
 assignCrystalValues()
 
+// function declarations
 function displayShip() {
   $("#launch-pad").html($("<div></div>", {"id": "ship-container"}));
   $("#ship-container").html($("<div></div", {"id": "ship"}));
@@ -24,9 +25,6 @@ function displayShip() {
 function displayExplosion() {
   $("#launch-pad").html($("<div></div>", {"id": "ship-container"}));
   $("#ship-container").html($("<img>", {"id": "explosion", "src": "assets/images/explosion2.png"}));
-
-  // $("#ship-container").html($("<div></div>", {"id": "explosion-container"}));
-  // $("#explosion-container").html($("<img>", {"id": "explosion", "src": "assets/images/explosion2.png"}));
 }
 
 function assignTarget() {
@@ -48,7 +46,7 @@ function displayReplayButton() {
   $("#replay").css("visibility", "visible");
 }
 
- var handler = function(e) {
+ var playGame = function(e) {
 
    var crystalValue = ($(this).attr("value"));
      crystalValue = parseInt(crystalValue);
@@ -57,7 +55,7 @@ function displayReplayButton() {
      if (counter === targetNumber) {
        wins++;
        $("#win-count").text(wins);
-       $(".crystal").off("click", handler);
+       $(".crystal").off("click", playGame);
        $("#flame").css("visibility", "visible");
        var ship = $("#ship-container");
        ship.animate({top: "-450px"}, 2500);
@@ -69,33 +67,34 @@ function displayReplayButton() {
      else if (counter >= targetNumber) {
        losses++;
        $("#loss-count").text(losses);
-       $(".crystal").off("click", handler);
+       $(".crystal").off("click", playGame);
 
        $("#rocket").css("visibility", "hidden");
        displayExplosion();
        var explosion = $("#explosion");
-       explosion.animate({width: "+=100px", height: "+=100px" }, 1000);
-       explosion.animate({height: "1px", width: "1px"}, 1500);
+       explosion.animate({width: "+=100px", height: "+=100px" }, 750);
+       explosion.animate({height: "1px", width: "1px", opacity: ".1"}, 1750);
        $("#instructions").css({"color":"#a82100","border":"4px solid #a82100","background-color":"#ef9c88"});
        $("#instructions").text("Target fuel level exceeded! Refueling mission failed.");
        setTimeout(displayReplayButton, 1000 * 2.5);
      }
  }
 
-$(".crystal").on("click", handler)
+ var resetGame = function() {
+   $(".crystal").on("click", playGame);
+   counter = 0;
+   $("#current").text("0");
+   displayShip();
+   $("#instructions").css({"color":"#000f66","border":"4px solid #000f66","background-color":"#d5d7e0"});
+   $("#instructions").text("The ship needs the exact amount of fuel for its mission. Too much and it may explode. Each of the crystals provides a different amount of fuel. Click them to fill its tank to the Target Fuel Level.");
+   $("#flame").css("visibility","hidden");
+   assignTarget();
+   assignCrystalValues();
+   $("#replay").css("visibility", "hidden");
+ }
 
+$(".crystal").on("click", playGame)
 
-  $("#replay").on("click", function() {
-    $(".crystal").on("click", handler);
-    counter = 0;
-    $("#current").text("0");
-    displayShip();
-    $("#instructions").css({"color":"#000f66","border":"4px solid #000f66","background-color":"#d5d7e0"});
-    $("#instructions").text("The ship needs the exact amount of fuel for its mission. Too much and it may explode. Each of the crystals provides a different amount of fuel. Click them to fill its tank to the Target Fuel Level.");
-    $("#flame").css("visibility","hidden");
-    assignTarget();
-    assignCrystalValues();
-    $("#replay").css("visibility", "hidden");
-  });
+$("#replay").on("click", resetGame)
 
 });

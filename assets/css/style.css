@@ -3,16 +3,12 @@ body {
 }
 
 #launch-pad {
-  /*height: 110px;
-  width: 75px;*/
   position: relative;
   top: 220px;
   left: 25px;
 }
 
 #ship-container {
-  /*height: 110px;
-  width: 75px;*/
   position: relative;
   bottom: 0px;
 }
@@ -52,7 +48,6 @@ body {
   border: 4px solid #000f66;
   background-color: #d5d7e0;
   font-weight: 400;
-  /*word-spacing: 3px;*/
   position: fixed;
   bottom: 165px;
   left: 10px;
@@ -83,7 +78,7 @@ body {
 #controls {
   position: fixed;
   bottom: 23px;
-  width: 100vw;
+  width: 108vw;
   background-color: #4f4f4f;
 }
 
@@ -113,6 +108,7 @@ body {
   text-align: center;
   height: 25px;
   border: 5px solid #4f4f4f;
+  padding-right: 8vw;
 }
 
 .gauge {
@@ -163,7 +159,7 @@ p {
 }
 
 #bottom-bar {
-  width: 100vw;
+  width: 108vw;
   height: 25px;
   background-color: #4f4f4f;
   position: fixed;
@@ -211,384 +207,222 @@ p {
   font-weight: bold;
 }
 
-@media screen and (max-height:625px) { /* xs screen size */
-
-
-
-
+/* xs screen size */
+@media screen and (max-height:625px) {
 
   #instructions {
-    /*font-family: 'VT323', Arial, monospace;*/
     font-size: 18px;
-    /*color: #000f66;*/
-    /*border: 4px solid #000f66;*/
-    /*background-color: #d5d7e0;*/
-    /*font-weight: 400;*/
-    /*position: fixed;*/
     top: 10px;
-    /*left: 10px;*/
     height: 115px;
     width: 77vw;
-    /*padding: 10px;*/
-    /*border-radius: 15px;*/
-    /*opacity: .7;*/
-  }
+}
 
   #empty {
-    font-family: 'Jomhuria', Arial, cursive;
-    font-size: 30px;  /*---------*/
-    line-height: 18px;  /*---------*/
-    /*text-align: center;*/
-    /*height: 25px;*/
-    /*border: 5px solid #4f4f4f;*/
-  }
+    font-size: 30px;
+}
 
   .fuelStatus {
-    font-family: 'Jomhuria', Arial, cursive;
     font-size: 18px;
-    color: #cca716;
-    text-align: center;
-    position: relative;
     bottom: 36px;
   }
 }
 
-@media screen and (min-width:571px) {   /* md screen size */
+/* md screen size */
+@media screen and (min-width:571px) {
   body {
     background-image: url("../images/planet2_md2.png");
   }
 
   #launch-pad {
-    /*height: 110px;
-    width: 75px;
-    position: relative;*/
     top: 320px;
     left: 55px;
   }
 
-  /*#ship-container {
-    height: 110px;
-    width: 75px;
-    position: relative;*/
-    /*bottom: 0px; */
-  /*}*/
-
-  /*font-family: 'VT323', Arial, monospace;
-  font-size: 20px;
-  color: #000f66;
-  border: 4px solid #000f66;
-  background-color: #d5d7e0;
-  font-weight: 400;
-  position: fixed;
-  bottom: 165px;
-  left: 10px;
-  height: auto;
-  width: 87vw;
-  padding: 10px;
-  border-radius: 15px;
-  opacity: .7;*/
-
   #instructions {
-    /*font-family: 'VT323', Arial, monospace;*/
-    font-size: 24px;    /* ---------- */
-    /*color: #000f66;*/
-    /*border: 4px solid #000f66;*/
-    /*background-color: #d5d7e0;*/
-    /*font-weight: 400;*/
-    /*position: fixed;*/
-    top: 15px;    /* ---------- */
-    left: 75px;    /* ---------- */
+    font-size: 24px;
+    top: 15px;
+    left: 75px;
     height: 120px;
-    width: 80vw;    /* ---------- */
-    /*padding: 10px;*/
-    /*border-radius: 15px;*/
-    /*opacity: .7;*/
+    width: 80vw;
   }
 
   #controls {
-    position: fixed;
     bottom: 40px;
-    width: 100vw;
-    background-color: #4f4f4f;
   }
 
   #scan-container {
     height: 250px;
-    width: 77vw;
-    border: 5px solid #4f4f4f;
-    display: inline-block;
     padding-left: .7vw;
-    float: left;
   }
 
   #crystalContainer {
-    width: 63vw;
-    position: relative;
     bottom: 112px;
     left: 14.5vw;
   }
 
   .crystal {
-    margin-left: 1.5vw;
-    display: inline-block;
-    width: 13vw;
-    max-height: 100px;    /* ----------- */
-    border-radius: 4px;
+    max-height: 100px;
   }
 
-
   #empty {
-    /*font-family: 'Jomhuria', Arial, cursive;*/
-    font-size: 64px;   /*---------*/
-    line-height: 36px; /*---------*/
-    /*text-align: center;*/
-    height: 60px;  /*---------*/
-    /*border: 5px solid #4f4f4f;*/
+    font-size: 64px;
+    line-height: 36px;
+    height: 60px;
   }
 
   .gauge {
     height: 85px;
-    border: 5px solid #4f4f4f;
   }
 
   .fuelDiv {
-    height: 100%;
-    width: 17vw;
-    display: inline-block;
     padding-left: 2vw;
   }
 
   .fuelStatus {
-    font-family: 'Jomhuria', Arial, cursive;
     font-size: 38px;
-    color: #cca716;
-    text-align: center;
-    position: relative;
     bottom: 85px;
   }
 
   p {
-    font-family: 'Jomhuria', Arial, cursive;
     font-size: 65px;
     margin-top: -10px;
-    color: #cc4015;
   }
 
   #bottom-bar {
-    width: 100vw;
     height: 40px;
-    background-color: #4f4f4f;
-    position: fixed;
-    bottom: 0;
   }
 
   #win-loss {
     height:30px;
-    width: 98vw;
-    background-color: #3786ff;
     border-radius: 15px;
-    position: relative;
     top: 5px;
-    left: 1vw;
   }
 
   #win {
     height: 30px;
-    position: relative;
-    left: 20px;
-    display: inline-block;
   }
 
   #win-count {
     height: 30px;
-    display: inline-block;
   }
 
   #loss {
     height: 30px;
-    position: absolute;
     left: 175px;
-    display: inline-block;
   }
 
   #loss-count {
     height: 30px;
-    display: inline-block;
   }
 
   .text {
-    font-family: 'Bungee Hairline', Arial, cursive;
     font-size: 30px;
-    color: white;
-    font-weight: bold;
   }
 }
 
-@media screen and (min-width:896px) {   /* lg screen size */
+/* lg screen size */
+@media screen and (min-width:896px) {
   body {
     background-image: url("../images/planet2_lg2.png");
   }
 
   #launch-pad {
-    /*height: 110px;
-    width: 75px;
-    position: relative;*/
     top: 345px;
     left: 200px;
   }
 
-  /*#ship-container {
-    height: 110px;
-    width: 75px;
-    position: relative;
-    top: 345px;
-    left: 200px;
-  }*/
-
   #instructions {
-    /*font-family: 'VT323', Arial, monospace;
-    font-size: 28px;
-    color: #000f66;
-    border: 4px solid #000f66;
-    background-color: #d5d7e0;
-    font-weight: 400;*/
-
     height: 100px;
     width: 70%;
-    /*position: fixed;*/
     top: 15px;
     left:230px;
-    /*padding: 10px;*/
-    /*border-radius: 15px;*/
-    /*opacity: .7;*/
   }
 
   #controls {
-    position: fixed;
     bottom: 40px;
-    width: 100vw;
-    background-color: #4f4f4f;
   }
 
   #scan-container {
-    height: 210px; /* ----------- */
-    width: 77vw;
-    border: 5px solid #4f4f4f;
-    display: inline-block;
-    padding-left: 2vw;    /* ----------- */
-    float: left;
+    height: 210px;
+    padding-left: 2vw;
   }
 
   #crystalContainer {
     height: 80px;
-    width: 63vw;
-    position: relative;
-    bottom: 90px;     /* ----------- */
-    left: 22vw;       /* ----------- */
+    bottom: 90px;
+    left: 22vw;
   }
 
   .crystal {
-    margin-left: 2.5vw;   /* ----------- */
-    display: inline-block;
-    width: 8vw;     /* ----------- */
-    max-height: 80px;    /* ----------- */
-    border-radius: 4px;
+    margin-left: 2.5vw;
+    width: 8vw;
+    max-height: 80px;
   }
 
   #empty {
-    /*font-family: 'Jomhuria', Arial, cursive;*/
-    font-size: 52px;  /*---------*/
-    line-height: 27px;   /*---------*/
-    /*text-align: center;*/
-    height: 40px;    /* ----------- */
-    /*border: 5px solid #4f4f4f;*/
+    font-size: 52px;
+    line-height: 27px;
+    height: 40px;
   }
 
-.emptyDiv {     /* ----------- */
+.emptyDiv {
   display: inline-block;
   width: 13vw;
 }
 
   .gauge {
-    height: 75px;   /* ----------- */
-    border: 5px solid #4f4f4f;
+    height: 75px;
   }
 
   .fuelDiv {
-    height: 80px;    /* ----------- */
-    display: inline-block;
-    padding-left: 4.3vw;     /* ----------- */
+    height: 80px;
+    padding-left: 4.3vw;
     width: 13vw;
   }
 
   .fuelImg {
-    border-radius: 6px;
-    height: 75px;     /* ----------- */
-    width: 13vw;   /* ----------- */
+    height: 75px;
+    width: 13vw;
   }
 
   .fuelStatus {
-    font-family: 'Jomhuria', Arial, cursive;
-    font-size: 38px;     /* ----------- */
-    color: #cca716;
-    text-align: center;
-    position: relative;
-    bottom: 75px;       /* ----------- */
+    font-size: 38px;
+    bottom: 75px;
   }
 
   p {
-    font-family: 'Jomhuria', Arial, cursive;
     font-size: 65px;
-    margin-top: -15px;         /* ----------- */
-    color: #cc4015;
+    margin-top: -15px;
   }
 
   #bottom-bar {
-    width: 100vw;
     height: 40px;
-    background-color: #4f4f4f;
-    position: fixed;
-    bottom: 0;
   }
 
   #win-loss {
     height:30px;
-    width: 98vw;
-    background-color: #3786ff;
     border-radius: 15px;
-    position: relative;
     top: 5px;
-    left: 1vw;
   }
 
   #win {
     height: 30px;
-    position: relative;
-    left: 20px;
-    display: inline-block;
   }
 
   #win-count {
     height: 30px;
-    display: inline-block;
   }
 
   #loss {
     height: 30px;
-    position: absolute;
     left: 175px;
-    display: inline-block;
   }
 
   #loss-count {
     height: 30px;
-    display: inline-block;
   }
 
   .text {
-    font-family: 'Bungee Hairline', Arial, cursive;
     font-size: 30px;
-    color: white;
-    font-weight: bold;
   }
 }

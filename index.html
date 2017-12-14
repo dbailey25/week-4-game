@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- links to external files -->
+<!-- links to external files -->
   <!-- css-reset -->
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <!-- css-custom -->
@@ -15,30 +15,17 @@
 
 <body>
 <div id="launch-pad">
-  <!-- <div id="ship-container">
-    <div id="ship">
-      <img id="rocket" src="assets/images/ship.png">
-    </div>
-    <div id="exhaust">
-      <img id="flame" src="assets/images/exhaust.png">
-    </div> -->
-    <!-- <div id="boom">
-      <img id="explosion" src="assets/images/explosion.png">
-    </div> -->
-  <!-- </div> -->
+
 </div>
 
-
 <div id="commDiv">
-  <!-- <img id="comm-panel" src="assets/images/comm-panel.jpg"> -->
-  <div id="instructions">
+    <div id="instructions">
     The ship needs the exact amount of fuel for its mission. Too much and it may explode. Each of the crystals provides a different amount of fuel. Click them to fill its tank to the Target Fuel Level.
   </div>
   <button id="replay">Play Again</button>
 </div>
-<!-- <div id="block"></div> -->
-<div id="controls">
 
+<div id="controls">
   <div id="scan-container">
     <img id="scanner" src="assets/images/scanner.jpg">
     <div id="crystalContainer">
@@ -49,31 +36,32 @@
     </div>
   </div>
 
-  <!-- <div class="fuel-container"> -->
-    <div id="empty">
-      <div class="emptyDiv">
-        FUEL LEVEL
-      </div>
+  <div id="empty">
+    <div class="emptyDiv">
+      FUEL LEVEL
+    </div>
+  </div>
 
-    </div>
-    <div class="gauge">
-      <div class="fuelDiv">
-        <img src="assets/images/fuel.jpg" class="fuelImg">
-        <div class="fuelStatus">
-          CURRENT <p id="current">0</p>
-        </div>
+  <div class="gauge">
+    <div class="fuelDiv">
+      <img src="assets/images/fuel.jpg" class="fuelImg">
+      <div class="fuelStatus">
+        CURRENT <p id="current">0</p>
       </div>
     </div>
-    <div class="gauge">
-      <div class="fuelDiv">
-        <img src="assets/images/fuel.jpg" class="fuelImg">
-        <div class="fuelStatus">
-          TARGET <p id="target">0</p>
-        </div>
+  </div>
+
+  <div class="gauge">
+    <div class="fuelDiv">
+      <img src="assets/images/fuel.jpg" class="fuelImg">
+      <div class="fuelStatus">
+        TARGET <p id="target">0</p>
       </div>
     </div>
+  </div>
 </div>
-<!-- wins-losses -->
+
+<!-- display wins-losses -->
 <div id="bottom-bar">
   <div id="win-loss">
     <div id="win" class="text">
@@ -82,6 +70,7 @@
         0
       </div>
     </div>
+
     <div id="loss" class="text">
       Losses:
       <div id="loss-count" class="text">
