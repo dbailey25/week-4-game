@@ -44,6 +44,9 @@ function assignCrystalValues() {
   $("#yellow").attr("value", crystalValues [3]);
 }
 
+function displayReplayButton() {
+  $("#replay").css("visibility", "visible");
+}
 
  var handler = function(e) {
 
@@ -60,7 +63,7 @@ function assignCrystalValues() {
        ship.animate({top: "-450px"}, 2500);
        $("#instructions").css({"color":"#1add27","border":"4px solid #29511a","background-color":"#4c6d40"});
        $("#instructions").text("Great job! Refueling mission complete.");
-       $("#replay").css("visibility", "visible");
+       setTimeout(displayReplayButton, 1000 * 2.5);
      }
 
      else if (counter >= targetNumber) {
@@ -75,12 +78,8 @@ function assignCrystalValues() {
        explosion.animate({height: "1px", width: "1px"}, 1500);
        $("#instructions").css({"color":"#a82100","border":"4px solid #a82100","background-color":"#ef9c88"});
        $("#instructions").text("Target fuel level exceeded! Refueling mission failed.");
-       $("#replay").css("visibility", "visible");
-
-
-       // !!!!!!!!!!!!!!!! ADD SHIP ANIMATION !!!!!!!!!!!!!!!
+       setTimeout(displayReplayButton, 1000 * 2.5);
      }
-
  }
 
 $(".crystal").on("click", handler)
