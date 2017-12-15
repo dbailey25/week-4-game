@@ -122,7 +122,7 @@ function displayLevel() {
        ship.animate({top: "-450px"}, 2500);
        $("#instructions").css({"color":"#1add27","border":"4px solid #29511a","background-color":"#4c6d40"});
        if (wins === 3) {
-         $("#instructions").html("Great job! Refueling mission complete.<br><br>Congratulations, you have completed the Beginner Level. Click Play Again to continue to Intermediate Level.");
+         $("#instructions").html("Great job! Refueling mission complete.<br><br>Congratulations, you have completed the Beginner Level. Click Play Again to continue to the Intermediate Level.");
        }
        else if (wins === 6) {
          $("#instructions").html("Great job! Refueling mission complete.<br><br>Very good, you have completed the Intermediate Level. Click Play Again to continue to the Expert Level.");
@@ -131,7 +131,7 @@ function displayLevel() {
          $("#instructions").html("Great job! Refueling mission complete.<br><br>Your skills are superior; you are now ready for the greatest challenge. Click Play Again to continue to the Master Level.");
        }
        else if (wins === 14) {
-         $("#instructions").html("Great job! Refueling mission complete.<br><br>Amazing, you have truly mastered this exercise. Now go find a way to save humanity with your new skills.");
+         $("#instructions").html("Great job! Refueling mission complete.<br><br>Amazing, you have truly mastered this exercise. Now go find a way to save humanity with your newly honed skills.");
        }
        else {
          $("#instructions").html("Great job! Refueling mission complete.");
