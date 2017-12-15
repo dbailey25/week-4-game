@@ -70,6 +70,22 @@ body {
   visibility: hidden;
 }
 
+#gameOver {
+  min-height: 5vh;
+  background-color: white;
+  border: solid 2px #4f4f4f;
+  padding: 10px;
+  padding-top: 20px;
+  font-size: 3vh;
+  font-family: 'Bungee', Arial Black, cursive;
+  color: #4f4f4f;
+  border-radius: 5px;
+  position: fixed;
+  top: 280px;
+  left: 30vw;
+  visibility: hidden;
+}
+
 #comm-panel {
   height: 100%;
   width: 100%;
@@ -169,6 +185,7 @@ p {
 #win-loss {
   height:18px;
   width: 98vw;
+  min-width: 358px;
   background-color: #3786ff;
   border-radius: 9px;
   position: relative;
@@ -179,7 +196,7 @@ p {
 #win {
   height: 18px;
   position: relative;
-  left: 20px;
+  left: 13px;
   display: inline-block;
 }
 
@@ -191,11 +208,23 @@ p {
 #loss {
   height: 18px;
   position: absolute;
-  left: 175px;
+  left: 92px;
   display: inline-block;
 }
 
 #loss-count {
+  height: 18px;
+  display: inline-block;
+}
+
+#level {
+  height: 18px;
+  position: absolute;
+  left: 192px;
+  display: inline-block;
+}
+
+#levelNumber {
   height: 18px;
   display: inline-block;
 }
@@ -298,21 +327,14 @@ p {
     top: 5px;
   }
 
-  #win {
-    height: 30px;
-  }
-
-  #win-count {
-    height: 30px;
-  }
-
   #loss {
-    height: 30px;
     left: 175px;
   }
 
-  #loss-count {
-    height: 30px;
+  #level {
+    position: absolute;
+    left: 370px;
+    display: inline-block;
   }
 
   .text {
@@ -405,21 +427,12 @@ p {
     top: 5px;
   }
 
-  #win {
-    height: 30px;
-  }
-
-  #win-count {
-    height: 30px;
-  }
-
   #loss {
-    height: 30px;
     left: 175px;
   }
 
-  #loss-count {
-    height: 30px;
+  #level {
+    left: 370px;
   }
 
   .text {
